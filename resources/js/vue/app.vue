@@ -26,7 +26,7 @@ export default {
     getItems() {
       axios.get('api/items')
       .then(res => {
-        console.log(res)
+        console.log(res.data)
         this.items = res.data
       })
       .catch(error => console.log(error))
